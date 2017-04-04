@@ -1,13 +1,12 @@
 # sketch-a-fontawesome
-Using a Deep Learning Convolutional Neural Net to help you find fontawesome icons by drawing !
-
+Using AI (a Deep Learning Convolutional Neural Net) to help you find fontawesome icons by drawing !
 
 # Introduction
-For those knowing http://fontawesome.io/, it's quite complicating to find the icon you want: Hundreds of icons exist and find the one can be tricky.
+For those knowing http://fontawesome.io/, it's quite complicated to find the icon you want: Hundreds of icons exist and find the one can be tricky.
 
 These icons have been tagged so that you can ease your search with keywords. But it's not a killer feature.
 
-What if you could sketch rapidly what you want to see icons ressembling your sketch ?
+What if you could sketch rapidly what you want to see and dynamically display icons ressembling your sketch ?
 This is the goal of this project :)
 
 # How I will do it
@@ -26,7 +25,10 @@ The fontawesome set is composed by 675 SVG icons. Each of these icon will repres
 - For 1 label, I'll then have 240 different images, ready to be trained !
 
 ## Build the CNN
-I will use Tensorflow to build the CNN. According to the YU, YANG, SONG, XIANG and HOSPEDALES study, the CNN will be built with these parameters:
+I will use Tensorflow to build the CNN. 
+I need GPU's for performance of my training step. My CNN will be composed by several Convolutional layers which are CPU (GPU) intensive.
+
+I will follow the YU, YANG, SONG, XIANG and HOSPEDALES study, the CNN will be built with these parameters:
 
 ![Screenshot](/screenshot.png?raw=true)
 
