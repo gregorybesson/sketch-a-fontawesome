@@ -24,6 +24,9 @@ The fontawesome set is composed by 675 SVG icons. Each of these icon will repres
 - I will then transform each icon as a png image and will rotate and blur(? maybe not) these images 24 times (8 rotations X 3 blur levels)
 - For 1 label, I'll then have 240 different images, ready to be trained !
 
+### Extract SVG from fontawesome
+I use https://icomoon.io to extract individual SVG. I obtain 675 icons on svg format.
+
 ## Build the CNN
 I will use Tensorflow to build the CNN. 
 I need GPU's for performance of my training step. My CNN will be composed by several Convolutional layers which are CPU (GPU) intensive.
